@@ -39,7 +39,8 @@ def buscar():
     if cons == 'S':
         buscar()
     else:    
-        print("\n\033[1;36m         Feito por Sérgio Renato Steglich - SRSistemas\033[m\n")                 
+        print("\n\033[1;36m         Feito por Sérgio Renato Steglich - SRSistemas\033[m\n") 
+        time.sleep(3.0)             
     exit()                    
             
 buscar()

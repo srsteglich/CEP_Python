@@ -44,7 +44,8 @@ def achar():
      if cons == 'S':
           achar()
      else:    
-          print("\n\033[1;36m         Feito por Sérgio Renato Steglich - SRSistemas\033[m\n")                 
+          print("\n\033[1;36m         Feito por Sérgio Renato Steglich - SRSistemas\033[m\n") 
+          time.sleep(3)                
      exit()                    
             
 achar()

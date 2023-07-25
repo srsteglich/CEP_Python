@@ -13,20 +13,9 @@ def achar():
           if not uf.isalpha():
                print ("\033[0;32m Apenas letras são permitidas e obrigatórios!\033[m")                
           else:
-               break             
-     while True:               
-          cidade = input("\033[1;30;46m   Digite a Cidade:\033[m")    
-          if not cidade.isalpha():
-               print ("\033[0;32m Apenas letras são permitidas e obrigatórios!\033[m") 
-          else:
-               break
-     while True:               
-          rua = input("\033[1;30;46m   Digite o Endereço:\033[m")       
-          if not rua.isalpha():
-               print ("\033[0;32m Apenas letras são permitidas e obrigatórios!\033[m") 
-          else:
-               break
-          
+               break                           
+     cidade = input("\033[1;30;46m   Digite a Cidade:\033[m")         
+     rua = input("\033[1;30;46m   Digite o Endereço:\033[m")                      
      link = f'https://viacep.com.br/ws/{uf}/{cidade}/{rua}/json/'
      req = requests.get(link)
      dic_req = req.json()    
@@ -44,8 +33,8 @@ def achar():
      if cons == 'S':
           achar()
      else:    
-          print("\n\033[1;36m         Feito por Sérgio Renato Steglich - SRSistemas\033[m\n") 
-          time.sleep(3)                
+          print("\n\033[1;36m         Feito por Sérgio Renato Steglich - SRSistemas\033[m\n")                 
+          time.sleep(3)
      exit()                    
             
 achar()

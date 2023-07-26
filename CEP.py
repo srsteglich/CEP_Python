@@ -5,7 +5,7 @@ import requests
 
 def buscar():
     os.system('cls' if os.name == 'nt' else 'clear') 
-    cep = input("\033[1;30;46m   Digite o seu CEP:\033[m")
+    cep = input("\033[1;36m   Digite o seu CEP:\033[m")
     cep = cep.replace("-","").replace(".","").replace(" ","")
     if not cep.isdigit():
         print("\n\033[1;31m    CEP invalido!!! Digite apenas números\033[m ")

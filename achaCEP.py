@@ -9,13 +9,13 @@ def achar():
      os.system('cls' if os.name == 'nt' else 'clear') 
      print("\n\033[1;36m   Procurar o seu CEP, ao digitar Cidade e Endereço pode digitar no mínino quatro letras\033[m\n") 
      while True:
-          uf = input("\033[1;30;46m   Digite o Estado:\033[m")         
+          uf = input("\033[1;36m   Digite o Estado:\033[m")         
           if not uf.isalpha():
                print ("\033[0;32m Apenas letras são permitidas e obrigatórios!\033[m")                
           else:
                break                           
-     cidade = input("\033[1;30;46m   Digite a Cidade:\033[m")         
-     rua = input("\033[1;30;46m   Digite o Endereço:\033[m")                      
+     cidade = input("\033[1;36m   Digite a Cidade:\033[m")         
+     rua = input("\033[1;36m   Digite o Endereço:\033[m")                      
      link = f'https://viacep.com.br/ws/{uf}/{cidade}/{rua}/json/'
      req = requests.get(link)
      dic_req = req.json()    
